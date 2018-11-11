@@ -17,25 +17,25 @@ $ vanityaion -i b00b5
 ```
 ### Examples
 
-Generate ethereum address:
+Generate aion address:
 ```sh
 $ vanityaion
 ```
 
-generate 10 ethereum addresses:
+generate 10 aion addresses:
 ```sh
 $ vanityaion -n 10
 ```
 
-generate 10 ethereum addresses with b00b5 as starting characters:
+generate 10 aion addresses with b00b5 as starting characters:
 ```sh
 $ vanityaion -n 10 -i b00b5
 ```
-generate 10 ethereum addresses with B00B5 as the checksum address (case sensitive):
+generate 10 aion addresses with B00B5 as the checksum address (case sensitive):
 ```sh
 $ vanityaion -n 10 -i B00B5 -c
 ```
-generate ethereum address with vanity contract address:
+generate aion address with vanity contract address:
 ```sh
 $ vanityaion -i b00b5 --contract
 ```
