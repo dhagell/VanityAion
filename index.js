@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 
-var VanityEth = require('./libs/VanityEth');
+var VanityEth = require('./libs/VanityAion');
 const ora = require('ora');
 var cluster = require('cluster')
 var numCPUs = require('os').cpus().length
@@ -70,7 +70,7 @@ if (cluster.isMaster) {
 } else {
     const worker_env = process.env;
     while (true) {
-        process.send(VanityEth.getVanityWallet(worker_env.input, worker_env.isChecksum == 'true', worker_env.isContract == 'true'))
+        process.send(VanityEth.getVanityWallet('a0' + worker_env.input, worker_env.isChecksum == 'true', worker_env.isContract == 'true'))
     }
 }
 process.stdin.resume();
