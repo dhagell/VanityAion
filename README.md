@@ -9,6 +9,8 @@ Nodejs based tool to generate vanity aion addresses
   - vanity contract address
   - log to file
   - checksum based vanity address
+  Uses aion-web3, aion-keystore, aion-rlp
+  https://github.com/qoire/aion-keystore
 
 ### Installation
 ```sh
