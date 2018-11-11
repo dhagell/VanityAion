@@ -18,6 +18,8 @@ $ npm install -g vanity-aion
 $ vanityaion -i b00b5
 ```
 ### Examples
+colour mapping rgb hex codes http://hexwords.scriptist.io/ 
+hexwords http://puzzles.bostonpython.com/hexwords.html
 
 Generate aion address:
 ```sh
