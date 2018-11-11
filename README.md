@@ -1,6 +1,6 @@
-# Vanity Eth
+# Vanity Aion
 
-Nodejs based tool to generate vanity ethereum addresses
+Nodejs based tool to generate vanity aion addresses
 
 # Features!
 
@@ -12,65 +12,65 @@ Nodejs based tool to generate vanity ethereum addresses
 
 ### Installation
 ```sh
-$ npm install -g vanity-eth
-$ vanityeth -i b00b5
+$ npm install -g vanity-aion
+$ vanityaion -i b00b5
 ```
 ### Examples
 
 Generate ethereum address:
 ```sh
-$ vanityeth
+$ vanityaion
 ```
 
 generate 10 ethereum addresses:
 ```sh
-$ vanityeth -n 10
+$ vanityaion -n 10
 ```
 
 generate 10 ethereum addresses with b00b5 as starting characters:
 ```sh
-$ vanityeth -n 10 -i b00b5
+$ vanityaion -n 10 -i b00b5
 ```
 generate 10 ethereum addresses with B00B5 as the checksum address (case sensitive):
 ```sh
-$ vanityeth -n 10 -i B00B5 -c
+$ vanityaion -n 10 -i B00B5 -c
 ```
 generate ethereum address with vanity contract address:
 ```sh
-$ vanityeth -i b00b5 --contract
+$ vanityaion -i b00b5 --contract
 ```
 log to file
 ```sh
-$ vanityeth -n 10 -l
+$ vanityaion -n 10 -l
 ```
 help me
 ```sh
-$ vanityeth -h
+$ vanityaion -h
 ```
 ### Docker usage
 
 Get the image
 ```sh
 # Build image locally after cloning repository
-$ docker build -t vanityeth .
+$ docker build -t vanityaion .
 
 # or download image
-docker pull myetherwallet/vanityeth
+docker pull MyEtherWallet/vanityeth
 ```
 
 Usage
 ```
-$ docker run -it vanityeth
+$ docker run -it vanityaion
 
 # Pass additional arguments
-$ docker run -it myetherwallet/vanityeth -i deadbeef
+$ docker run -it dhagell/vanityaion -i deadbeef
 ```
 
 ### Running Locally
 To run from source:
 ```sh
-git clone git@github.com:MyEtherWallet/VanityEth.git
-cd VanityEth
+git clone git@github.com:dhagell/VanityAion.git
+cd VanityAion
 npm install
 ./index.js
 ```
