@@ -39,7 +39,8 @@ var getVanityWallet = function(input = '', isChecksum = false, isContract = fals
     return _wallet;
 }
 var getDeterministicContractAddress = function(address) {
-	var daddr = '0xa0' + Web3.utils.sha3(RLP.encode([address, 0])).slice(12).toString('hex');
+	https://github.com/aionnetwork/aion/blob/1bbeec193eda2a915233faa51aa69680d5bcfd43/modCrypto/src/org/aion/crypto/HashUtil.java#L305-L314
+	var daddr = '0x' + Web3.utils.blake2b256(RLP.encode([address, 0])).slice(12).toString('hex');
     return daddr
 }
 module.exports = {
